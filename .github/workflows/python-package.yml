@@ -1,40 +1,45 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+name: Python Package using Conda with PyTorch
 
-name: Python package
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
-  build:
-
+  build-linux:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+      max-parallel: 5
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+        python-version: '3.10'
+    - name: Add conda to system path
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      # Use mamba for faster environment solving and package installation
+      # It's highly recommended for PyTorch environments.
+      run: |
+        conda install mamba -n base -c conda-forge
+        mamba env update --file environment.yml --name base
+    - name: Install PyTorch
+      # Install the appropriate PyTorch version based on CUDA availability
+      # This example uses CPU-only PyTorch for simplicity and broader compatibility.
+      # Adapt this section based on your needs (CUDA version, specific PyTorch build). 
+      run: |
+        conda activate base
+        conda install pytorch torchvision torchaudio cpuonly -c pytorch
+        # For CUDA, uncomment and adjust the following (specify CUDA toolkit version).
+        # conda install pytorch torchvision torchaudio cudatoolkit=11.7 -c pytorch -c conda-forge 
     - name: Lint with flake8
       run: |
-        # stop the build if there are Python syntax errors or undefined names
+        conda activate base
+        conda install flake8
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+        conda activate base
+        conda install pytest
         pytest
