@@ -1,31 +1,23 @@
-import torch
-from torch import nn
-from torch.utils.data import DataLoader
-from torchvision import datasets
-from torchvision.transforms import ToTensor
+import numpy as np 
+import torch as py
 
-training_data = datasets.FashionMNIST(
-    root="data",
-    train=True,
-    download=True,
-    transform=ToTensor(),
-)
+# def pytorh():
+#     a = np.ones(10)
+#     b = np.ones(10)* 2
+#     c = b * a
+#     d = c + 1
+#     print(d,c)
 
-# Download test data from open datasets.
-test_data = datasets.FashionMNIST(
-    root="data",
-    train=False,
-    download=True,
-    transform=ToTensor(),
-)
+# pytorh()    
 
-batch_size = 64
 
-# Create data loaders.
-train_dataloader = DataLoader(training_data, batch_size=batch_size)
-test_dataloader = DataLoader(test_data, batch_size=batch_size)
+# second exapmle
+def one():
+    A = ("A")
+    B = ("B")
+    C = A * B
+    D = C +(1)
+    F = compile (D)
+    d = F(A=np.ones(10),B=np.ones(10)*2)
 
-for X, y in test_dataloader:
-    print(f"Shape of X [N, C, H, W]: {X.shape}")
-    print(f"Shape of y: {y.shape} {y.dtype}")
-    break 
+one()
