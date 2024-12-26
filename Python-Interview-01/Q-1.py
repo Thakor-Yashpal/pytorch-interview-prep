@@ -1,4 +1,4 @@
-# write a function that take  two integer and than multple thst number with 2
+# 1 write a function that take  two integer and than multple thst number with 2
 
 def two_numbers (num1,num2):
     
@@ -11,7 +11,7 @@ print(result1,result2)
 
 
 
-# what is __init__()in python ?
+# 2  what is __init__()in python ?
 
 class book1shop:
     
@@ -29,7 +29,7 @@ A.book()
 
 
 
-# what is a difference between a mutable data type and an immutable data type ?
+# 3 what is a difference between a mutable data type and an immutable data type ?
 
 # mutable data type
 a_list = [1,2,3,4]
@@ -58,3 +58,19 @@ print(a_str)  # Output: world
 a_tuple = (1, 2, 3)
 # a_tuple[0] = 4  # This will raise a TypeError
 print(a_tuple)  # Output: (1, 2, 3)
+
+
+
+
+# 4 Explain list, dictionary, and tuple comprehension with an example 
+
+my_list = [i for i in range(1,10)]
+print(my_list)
+
+# Dictionary
+my_dict = {i: i**2 for i in range(1,10)}
+print(my_dict)
+
+# Tuple
+my_tuple = tuple(i for i in range(1,10))
+print(my_tuple)
