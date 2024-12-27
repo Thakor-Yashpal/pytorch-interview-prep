@@ -84,7 +84,7 @@ class Anime_Name:
         self.Do_you_like_it = Do_you_like_it
         
     def LAnime(self):
-        print("Do you like this anime:", self.Anime_name)
+        print(f"Do you like this anime: {self.Anime_name}?") # Added a question mark
         
 # Create instances of the class
 anime_a = Anime_Name('Cowboy Bebop', 5, 'Yes')  
