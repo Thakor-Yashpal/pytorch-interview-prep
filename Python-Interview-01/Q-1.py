@@ -10,7 +10,6 @@ print(result1,result2)
 
 
 
-
 # 2  what is __init__()in python ?
 
 class book1shop:
