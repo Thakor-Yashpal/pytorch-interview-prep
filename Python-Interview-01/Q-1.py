@@ -93,3 +93,4 @@ anime_b = Anime_Name('Steins:Gate', 6, 'Yes')
 # Call the method on the instances
 anime_a.LAnime()
 anime_b.LAnime() 
+ 
