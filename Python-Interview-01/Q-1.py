@@ -1,79 +1,79 @@
-# # 1 write a function that take  two integer and than multple thst number with 2
+# 1 write a function that take  two integer and than multple thst number with 2
 
-# def two_numbers (num1,num2):
+def two_numbers (num1,num2):
     
-#     return num1 *2, num2 * 2
+    return num1 *2, num2 * 2
 
-# result1,result2 =two_numbers(5,10)
+result1,result2 =two_numbers(5,10)
 
-# print(result1,result2)
-
-
+print(result1,result2)
 
 
-# # 2  what is __init__()in python ?
 
-# class book1shop:
+
+# 2  what is __init__()in python ?
+
+class book1shop:
     
-#     def __init__(self,title):
-#         self.title = title
+    def __init__(self,title):
+        self.title = title
 
-#     def book(self):
-#         print("The title of the book",self.title)
+    def book(self):
+        print("The title of the book",self.title)
         
-# A = book1shop(title="Think like a monk")
-# X = book1shop(title="Think like a SANDMAN")
-# X.book()
-# A.book() 
+A = book1shop(title="Think like a monk")
+X = book1shop(title="Think like a SANDMAN")
+X.book()
+A.book() 
 
 
 
 
-# # 3 what is a difference between a mutable data type and an immutable data type ?
+# 3 what is a difference between a mutable data type and an immutable data type ?
 
-# # mutable data type
-# a_list = [1,2,3,4]
-# a_list.append(5)
-# print(a_list)
+# mutable data type
+a_list = [1,2,3,4]
+a_list.append(5)
+print(a_list)
 
-# # dictironary 
-# a_dcit = {"a":1,"b":2,"c":3}
-# a_dcit["d"] = 4
+# dictironary 
+a_dcit = {"a":1,"b":2,"c":3}
+a_dcit["d"] = 4
 
-# print(a_dcit)
+print(a_dcit)
 
-# # An immutable data type 
+# An immutable data type 
 
-# # Numeric Example
-# a_num = 10
-# a_num = 20  # Creates a new integer object
-# print(a_num)  # Output: 20
+# Numeric Example
+a_num = 10
+a_num = 20  # Creates a new integer object
+print(a_num)  # Output: 20
 
-# # String Example
-# a_str = "hello"
-# a_str = "world"  # Creates a new string object
-# print(a_str)  # Output: world
+# String Example
+a_str = "hello"
+a_str = "world"  # Creates a new string object
+print(a_str)  # Output: world
 
-# # Tuple Example
-# a_tuple = (1, 2, 3)
-# # a_tuple[0] = 4  # This will raise a TypeError
-# print(a_tuple)  # Output: (1, 2, 3)
-
-
+# Tuple Example
+a_tuple = (1, 2, 3)
+# a_tuple[0] = 4  # This will raise a TypeError
+print(a_tuple)  # Output: (1, 2, 3)
 
 
-# # 4 Explain list, dictionary, and tuple comprehension with an example 
 
-# my_list = [i for i in range(1,10)]
-# print(my_list)
 
-# # Dictionary
-# my_dict = {i: i**2 for i in range(1,10)}
-# print(my_dict)
+# 4 Explain list, dictionary, and tuple comprehension with an example 
 
-# # Tuple
-# my_tuple = tuple(i for i in range(1,10))
-# print(my_tuple)
+my_list = [i for i in range(1,10)]
+print(my_list)
+
+# Dictionary
+my_dict = {i: i**2 for i in range(1,10)}
+print(my_dict)
+
+# Tuple
+my_tuple = tuple(i for i in range(1,10))
+print(my_tuple)
 
 
 class Anime_Name:
