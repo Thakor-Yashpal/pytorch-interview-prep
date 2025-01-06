@@ -21,6 +21,3 @@ def one():
     d = F(A=np.ones(10),B=np.ones(10)*2)
 
 one()  
-
-
-# working
