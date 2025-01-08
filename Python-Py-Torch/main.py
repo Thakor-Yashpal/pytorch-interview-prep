@@ -1,5 +1,9 @@
 import numpy as np
-import torch as pytorch
+import torch
+from torch import nn
+from torch.utils.data import DataLoader
+from torchvision import datasets
+from torchvision.transforms import ToTensor
 
 def pytorh():
     a = np.ones(10)
@@ -55,3 +59,8 @@ la_ma = TensorCount(count=5, tensor=None, cpu_usage=50, gpu_usage=75)
 # Call the method
 la_ma.count_number()
 
+
+
+# what is tthe use of torch.from_numpy()
+
+torch.from_numpy() #how to use this function?
