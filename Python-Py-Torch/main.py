@@ -63,4 +63,4 @@ la_ma.count_number()
 
 # what is tthe use of torch.from_numpy()
 
-torch.from_numpy() #how to use this function?
+torch.from_numpy() #how to use this function? /
