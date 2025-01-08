@@ -44,3 +44,14 @@ with open('Test2.py','w') as file:
 # what is Binary Search  
 
 #  lest start from tomorow
+
+class user_input:
+    def __init__(self,Username,Password,Email):
+        self.Uswname = Username
+        self.Password = Password
+        self.Email = Email
+        
+    def __init_subclass__(cls):
+        user_name = input("user_input")
+        return user_name
+
