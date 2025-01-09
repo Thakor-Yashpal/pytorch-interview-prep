@@ -24,7 +24,7 @@ one()
 
 
 # Define x as a tensor with gradient tracking enabled
-x = pytorch.tensor(1.0, requires_grad=True)
+x = torch.tensor(1.0, requires_grad=True)
 
 # Define y as a function of x
 y = 4 * x + 3
@@ -36,26 +36,25 @@ y.backward()
 print(x.grad)
 
 
-class TensorCount:
-    def __init__(self, count, tensor, cpu_usage, gpu_usage):
-        self.count = count
-        self.tensor = tensor
-        self.cpu_usage = cpu_usage
-        self.gpu_usage = gpu_usage
+# class TensorCount:
+#     def __init__(self, count, tensor, cpu_usage, gpu_usage):
+#         self.count = count
+#         self.tensor = tensor
+#         self.cpu_usage = cpu_usage
+#         self.gpu_usage = gpu_usage
     
-    def count_number(self):
-        # Generate a random integer tensor
-        random_tensor = pytorch.gradient(1, 10, (self.count,), requires_grad=True)
-        print("Generated Random Tensor:", random_tensor)
+#     def count_number(self):
+#         # Generate a random integer tensor
+#         random_tensor = torch.gradient(1, 10, (self.count,), requires_grad=True)
+#         print("Generated Random Tensor:", random_tensor)
 
-# Create an instance of the class
-la_ma = TensorCount(count=5, tensor=None, cpu_usage=50, gpu_usage=75)
+# # Create an instance of the class
+# la_ma = TensorCount(count=5, tensor=None, cpu_usage=50, gpu_usage=75)
 
-# Call the method
-la_ma.count_number()
+# # Call the method
+# la_ma.count_number()
 
 
 
 # what is tthe use of torch.from_numpy()
-
-torch.from_numpy() #how to use this function? /
+#how to use this function? /
