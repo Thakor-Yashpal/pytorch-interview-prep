@@ -32,7 +32,6 @@ y = 4 * x + 3
 # Perform backward pass to compute the gradient of y w.r.t. x
 y.backward()
 
-# Print the gradient of x
 print(x.grad)
 
 
