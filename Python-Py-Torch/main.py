@@ -1,5 +1,9 @@
 import numpy as np
 import torch 
+
+
+
+
 def pytorh():
     a = np.ones(10)
     b = np.ones(10)* 2
@@ -12,15 +16,15 @@ pytorh()    #pip install torch torchvision torchaudio
 
 # second exapmle
 
-def one():
-    A = ("A")
-    B = ("B")
-    C = A * B
-    D = C +(1)
-    F = compile (D)
-    d = F(A=np.ones(10),B=np.ones(10)*2)
+# def one():
+#     A = ("A")
+#     B = ("B")
+#     C = A * B
+#     D = C +(1)
+#     F = compile (D)
+#     d = F(A=np.ones(10),B=np.ones(10)*2)
 
-one()  
+# one()  
 
 
 # Define x as a tensor with gradient tracking enabled
