@@ -93,3 +93,19 @@ anime_b = Anime_Name('Steins:Gate', 6, 'Yes')
 anime_a.LAnime()
 anime_b.LAnime() 
  
+
+import random
+
+var01=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+random.shuffle(var01)
+print(var01)
+
+def calu():
+    my_dic01 = 1 + 8
+    for my_dic01 in range(0,10):
+        if my_dic01 == 8:
+            print(f" 8 == 8 this will stop the loop {my_dic01}")
+            return my_dic01
+        else:
+            print(my_dic01)
+calu()
