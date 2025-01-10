@@ -94,11 +94,11 @@ anime_a.LAnime()
 anime_b.LAnime() 
  
 
-import random
+# import random
 
-var01=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-random.shuffle(var01)
-print(var01)
+# var01=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+# random.shuffle(var01)
+# print(var01)
 
 def calu():
     my_dic01 = 1 + 8
