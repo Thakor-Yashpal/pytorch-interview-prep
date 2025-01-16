@@ -102,7 +102,7 @@ anime_b.LAnime()
 
 def calu():
     my_dic01 = 1 + 8
-    for my_dic01 in range(0,10):
+    for my_dic01 in range(0,20):
         if my_dic01 == 8:
             print(f" 8 == 8 this will stop the loop {my_dic01}")
             return my_dic01
