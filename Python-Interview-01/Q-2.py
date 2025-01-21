@@ -54,4 +54,3 @@ class user_input:
     def __init_subclass__(cls):
         user_name = input("user_input")
         return user_name
-
