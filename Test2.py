@@ -1,5 +1,3 @@
 import torch
-import torch.compiler
-x = torch.compiler(5, 3)
+x = torch.rand(5, 3)
 print(x)
-
