@@ -63,4 +63,4 @@ for i in range(0,10):
     if i % 2:
         print(f"You have odd number = {i}")
     else:
-        print(f"You have even number = {i}")
+        print(f"You have even number = {i}")         
