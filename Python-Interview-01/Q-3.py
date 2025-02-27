@@ -1,3 +1,11 @@
-var = "What is your name ?"
+class employee:
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
 
-print(var)
+e1 = employee("John", 22, 20000)  # Correct way to create an employee object
+print(e1.name, e1.age, e1.salary)   
+
+
+
