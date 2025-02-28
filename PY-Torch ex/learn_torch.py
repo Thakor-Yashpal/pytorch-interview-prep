@@ -1,9 +1,9 @@
 import torch 
 
-# scaler = torch.tensor(7)
-# scaler.ndim
-# scaler.item()
-# print(scaler.item())
+scaler = torch.tensor(7)
+scaler.ndim
+scaler.item()
+print(scaler.item())
 
 vactor = torch.tensor([7,7])
 vactor.ndim
@@ -19,4 +19,7 @@ print(matrex[1])
 
 
 # creating a tensor with small data 
-
+  
+matrix_data = [[1, 2], [3, 4]]
+matrix_tensor = torch.tensor(matrix_data)
+print(matrix_tensor)
