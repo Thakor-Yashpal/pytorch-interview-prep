@@ -25,7 +25,7 @@ print(f"Class: {student1.classs}")
 print(f"Scores: {student1.scor}")
 print(f"Median Score: {student1.median_score}")
 
-scores2 = []
+scores2 = [12,]
 student2 = Students("Jane Doe", "11th", scores2)
 print(f"Student: {student2.name}")
 print(f"Scores: {student2.scor}")
