@@ -3,7 +3,7 @@ import torch
 scaler = torch.tensor(7)
 scaler.ndim
 scaler.item()
-print(scaler.item
+print(scaler.item)
       
 vactor = torch.tensor([7,7])
 vactor.ndim
@@ -69,5 +69,6 @@ for row in matrix_tensor:
         print("This row is empty (all zeros).")
     else:
         print("This row is not empty (contains non-zero elements).")
-print(matrix_tensor)
+        print(row)
 
+print(matrix_tensor)
