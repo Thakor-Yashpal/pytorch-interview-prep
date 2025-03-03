@@ -62,13 +62,6 @@ for emty_tensor in matrex_tensor:
 # Create a random tensor
 matrix_tensor = torch.rand(size=(3, 244, 244))
 
-# Iterate through the rows of the tensor
-for row in matrix_tensor:
-    # Check if all elements in the row are zero.
-    if torch.all(row == 0):  # Use torch.all for element-wise comparison
-        print("This row is empty (all zeros).")
-    else:
-        print("This row is not empty (contains non-zero elements).")
-        print(row)
 
 print(matrix_tensor)
+
