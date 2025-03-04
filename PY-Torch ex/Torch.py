@@ -1,14 +1,14 @@
 import torch
-x = torch.rand(5, 3)
-print(x)
 
-# not in thsi 
 
-x1 = torch.tensor(1.5)
-x2 = torch.tensor(2.5)
+# var = [12,12,12]
+# torch.tensor(var)
 
-if x1 == x2:
-    print(x1)
-else:
-    print(x2)
+# print(var)
 
+
+land_scape = []
+
+new =  torch.rand(land_scape)
+
+print(new)
