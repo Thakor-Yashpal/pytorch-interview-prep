@@ -9,6 +9,9 @@ import torch
 
 land_scape = []
 
+
 new =  torch.rand(land_scape)
 
 print(new)
+
+
