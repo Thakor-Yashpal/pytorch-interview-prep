@@ -1,0 +1,12 @@
+torch
+torchvision
+torchaudio
+numpy
+matplotlib
+scikit-learn
+pandas
+jupyter
+tqdm  # For progress bars
+Pillow # For image processing
+seaborn # For statistical data visualization (optional)
+requests # For downloading data (optional)
