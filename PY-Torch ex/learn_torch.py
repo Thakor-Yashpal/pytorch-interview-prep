@@ -39,9 +39,6 @@ print(random.ndim)
 print(random.shape)
 
 
-random_imag =torch.rand(size= (3,224,224))
-random_imag,random_imag.ndim,random_imag.ndim
-print(random_imag)
 
 emty_tensor = []
 
@@ -65,3 +62,8 @@ matrix_tensor = torch.rand(size=(3, 244, 244))
 
 print(matrix_tensor)
 
+
+
+random_imag =torch.rand(size= (3,224,224))
+random_imag,random_imag.ndim,random_imag.ndim
+print(random_imag)
