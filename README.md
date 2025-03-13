@@ -57,7 +57,7 @@ This repository is a comprehensive resource for learning PyTorch and preparing f
 8.  **Projects**
     *   [Image Classification Project](projects/image_classification/README.md): End-to-end image classification project using PyTorch.
     *   [Text Generation Project](projects/text_generation/README.md): Building a text generation model with LSTMs.
-    *   [Other Project Ideas](projects/ideas.md): List of other potential project ideas.
+    *   [Other Project Ideas](projects/ideas.md):
 
 9.  **Resources**
     *   [PyTorch Documentation](https://pytorch.org/docs/stable/index.html): Official PyTorch documentation.
@@ -80,9 +80,7 @@ This repository is a comprehensive resource for learning PyTorch and preparing f
     ```bash
     pip install -r requirements.txt
     ```
-
-    (If you don't have a `requirements.txt` file, create one listing the necessary packages like `torch`, `torchvision`, `numpy`, `matplotlib`, etc.)
-
+    
 3.  **Explore the Content:**
 
     *   Navigate through the folders and files to find the specific topics you are interested in.
