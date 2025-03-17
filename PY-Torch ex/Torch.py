@@ -1,17 +1,14 @@
 import torch
 
 
-# var = [12,12,12]
-# torch.tensor(var)
+# scaler = torch.tensor([12,12,12])
+# scaler.ndim
+# scaler.shape
 
-# print(var)
+# print(scaler)
 
+matrex = torch.tensor(  [[7,7],
+                        [12,12],
+                        [14,14]])
 
-land_scape = []
-
-
-new =  torch.rand(land_scape)
-
-print(new)
-
-
+print(matrex)
