@@ -1,14 +1,30 @@
 import torch
+import numpy as np
+
+# how to work with tensor?
+
+# list = [[1,2,3,4,5,6],[1,2,3,4,5,6]]
+
+# print(list)
+
+# tensor = torch.tensor(list)
+
+# print(tensor)
 
 
-# scaler = torch.tensor([12,12,12])
-# scaler.ndim
-# scaler.shape
 
-# print(scaler)
+# Numpy Array 
 
-matrex = torch.tensor(  [[7,7],
-                        [12,12],
-                        [14,14]])
+np1 =np.random.rand(3,4)
 
-print(matrex)
+print(np1)
+
+
+
+# ------ how to createa tensor -----
+
+tensor_2d =torch.randn(3,4)
+
+print(tensor_2d)
+
+
