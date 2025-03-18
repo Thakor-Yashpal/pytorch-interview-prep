@@ -1,6 +1,10 @@
 import torch
 import numpy as np
 
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+print(device)
 # how to work with tensor?
 
 # list = [[1,2,3,4,5,6],[1,2,3,4,5,6]]
