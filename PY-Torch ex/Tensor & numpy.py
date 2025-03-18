@@ -16,6 +16,8 @@ import numpy as np
 # print(Array)
 
 
+#------------ numpy array for createing random numbers for tesnsor ----------
+
 np1 =np.random.rand(3,4)
 
 # print(np1)
