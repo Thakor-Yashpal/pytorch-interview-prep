@@ -3,6 +3,9 @@ import numpy
 import numpy as np 
 
 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+print(device)
 
 # Numpy array vs pytorch tensor 
 
