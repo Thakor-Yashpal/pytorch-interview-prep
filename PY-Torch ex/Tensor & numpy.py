@@ -21,9 +21,7 @@ print(device)
 
 #------------ numpy array for createing random numbers for tesnsor ----------
 
-np1 =np.random.rand(3,4)
 
-# print(np1)
 
 # --------Tesnsor 2d and 3d,how to createa tensor------------
 
@@ -38,6 +36,11 @@ np1 =np.random.rand(3,4)
 
 # createa tensor out of numpy array
 
-my_tensor = torch.tensor(np1)
+np1 =np.random.rand(3,4)
 
-print(my_tensor)
+VL01 = torch.from_numpy(np1)
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+VL02 = VL01.to(dtype=torch.float32, device=device)
+
+print(VL02)
