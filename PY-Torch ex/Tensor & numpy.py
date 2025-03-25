@@ -21,13 +21,13 @@ import numpy as np
 
 # --------Tesnsor 2d and 3d,how to createa tensor------------
 
-# tensor_2d =torch.randn(3,4)
+tensor_2d =torch.randn(3,4)
 
-# print(tensor_2d)
+print(tensor_2d)
 
-# tensor_3d =torch.zeros(2,3,4)
+tensor_3d =torch.zeros(2,3,4)
 
-# print(tensor_3d)
+print(tensor_3d)
 
 
 # createa tensor out of numpy array
