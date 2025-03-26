@@ -75,7 +75,7 @@ class TestModel(unittest.TestCase):  #Rename appropriately
 
     def test_model_forward_pass(self):
         """Test that the forward pass of the model runs without errors."""
-        #Example
+        #Ex
         # input_data = torch.randn(1, 10)
         # try:
         #     output = self.model(input_data)
