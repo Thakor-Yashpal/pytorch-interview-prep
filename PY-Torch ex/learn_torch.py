@@ -1,5 +1,10 @@
 import torch 
 
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+print(device)
+
 scaler = torch.tensor(7)
 scaler.ndim
 scaler.item()
