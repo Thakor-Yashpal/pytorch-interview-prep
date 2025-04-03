@@ -1,17 +1,34 @@
 import torch
+import numpy as np
 
 
-# var = [12,12,12]
-# torch.tensor(var)
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-# print(var)
+print(device)
+# how to work with tensor?
+
+# list = [[1,2,3,4,5,6],[1,2,3,4,5,6]]
+
+# print(list)
+
+# tensor = torch.tensor(list)
+
+# print(tensor)
 
 
-land_scape = []
+
+# Numpy Array 
+
+np1 =np.random.rand(3,4)
+
+print(np1)
 
 
-new =  torch.rand(land_scape)
 
-print(new)
+# ------ how to createa tensor -----
+
+tensor_2d =torch.randn(3,4)
+
+print(tensor_2d)
 
 

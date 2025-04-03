@@ -2,6 +2,12 @@ import unittest
 import torch
 import numpy as np
 
+
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+print(device)
+
 # Import the modules/functions you want to test (adjust the import paths)
 # For example:
 # from your_project import my_function
@@ -69,7 +75,7 @@ class TestModel(unittest.TestCase):  #Rename appropriately
 
     def test_model_forward_pass(self):
         """Test that the forward pass of the model runs without errors."""
-        #Example
+        #Ex
         # input_data = torch.randn(1, 10)
         # try:
         #     output = self.model(input_data)
