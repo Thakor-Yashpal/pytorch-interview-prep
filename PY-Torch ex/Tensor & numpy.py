@@ -35,5 +35,5 @@ import numpy as np
 np1 =np.random.rand(3,4)
 
 VL01 = torch.from_numpy(np1)
-print(VL02)
+print(VL01)
 
