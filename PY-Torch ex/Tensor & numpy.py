@@ -36,8 +36,5 @@ np1 =np.random.rand(3,4)
 
 VL01 = torch.from_numpy(np1)
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-VL02 = VL01.to(dtype=torch.float64, device=device)
-
-print(device)
+print(VL02)
 
